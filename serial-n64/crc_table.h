@@ -3,8 +3,9 @@
  * the cube64 project
  *  http://cia.vc/stats/project/navi-misc/cube64
  */
-unsigned char crc_repeating_table[] = {
-          0xFF, // 0x00
+#include <avr/pgmspace.h>
+const unsigned char crc_repeating_table[] PROGMEM = {
+    0xFF, // 0x00
     0x14, // 0x01
     0xAC, // 0x02
     0x47, // 0x03
